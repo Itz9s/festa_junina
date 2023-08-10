@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa Junina - Confirmação de Participação</title>
+    <link rel="stylesheet" href="festajunina.css">
+</head>
+<body>
+    <header>
+        <h1>Festa Junina Paranaguá</h1>
+        <p>Confirme sua participação na nossa festa animada!</p>
+    </header>
+
+    <img src="festajunina.jpg" alt="" height="50%" width="50%" class="imagem">
+
+    <main>
+        <section class="convite">
+            <h2>Venha celebrar conosco!</h2>
+            <p>Olá, amigos e amigas!</p>
+            <p>Vocês estão convidados para a nossa tradicional Festa Junina, uma festividade cheia de alegria, música, dança, comidas típicas deliciosas e muitas brincadeiras divertidas para toda a família!</p>
+            <p>Esperamos contar com a sua presença para juntos fazermos dessa noite uma celebração inesquecível!</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Confirme sua presença</h2>
+            <form action="processar_formulario.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <label for="numero_pessoas">Número de pessoas:</label>
+                <input type="number" id="numero_pessoas" name="numero_pessoas" min="1" required>
+
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <input type="submit" value="Confirmar Presença">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
